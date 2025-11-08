@@ -15,7 +15,10 @@ public class App {
         Student s1 = (Student) context.getBean("student1");
         System.out.println(s1);
         System.out.println("using value as attribute");
-        Student s2 = (Student) context.getBean("student1");
+        Student s2 = (Student) context.getBean("s1");
         System.out.println(s2);
+        System.out.println("using p Schema");
+        Student s3 = (Student) context.getBean("s2");
+        System.out.println(s3);
     }
 }
