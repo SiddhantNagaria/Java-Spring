@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- beans -->
+    <bean id="Student" class="com.springcore.Collections.Emp">
+        <property name="name" value="Shyam"/>
+        <property name="phones">
+            <list>
+                <value>25546467476</value>
+                <value>76876786796</value>
+                <value>45646456576</value>
+                <value>56756756856</value>
+            </list>
+        </property>
+        <property name="address">
+            <set>
+                <value>Delhi</value>
+                <value>Mumbai</value>
+                <value>Bangalore</value>
+                <value>Chennai</value>
+            </set>
+        </property>
+        <property name="courses">
+            <map>
+                <entry key="Java" value="2 month"/>
+                <entry key="Python" value="1 month"/>
+                <entry key="GenAI" value="6 month"/>
+            </map>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="company">TCS</prop>
+                <prop key="location">Mumbai </prop>
+            </props>
+        </property>
+
+    </bean>
+</beans>

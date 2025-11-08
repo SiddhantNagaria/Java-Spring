@@ -8,7 +8,8 @@
     <!-- beans -->
     <bean
             id="student1" class="com.springcore.Student">
-        <!-- setter injection -->
+        <!-- Property Injection-->
+        <!-- Injection Type : -> Setter injection -->
         <property name="id">
             <value>101</value>
         </property>
@@ -21,6 +22,7 @@
     </bean>
 
     <!--    using value as attribute-->
+    <!-- Injection Type : -> Setter injection -->
     <bean id="s1" class="com.springcore.Student">
         <property name="id" value="1101"/>
         <property name="name" value="Siddhant"/>
@@ -28,6 +30,7 @@
     </bean>
 
     <!--using P-Schema-->
+    <!-- Injection Type : -> Setter injection -->
     <bean id="s2" class="com.springcore.Student"
           p:id="1001" p:name="Siddhant" p:Address="Mumbai"
     />
