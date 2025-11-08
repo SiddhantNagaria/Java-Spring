@@ -11,7 +11,11 @@ public class App {
     public static void main(String[] args) {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+        System.out.println("using setter injection");
         Student s1 = (Student) context.getBean("student1");
         System.out.println(s1);
+        System.out.println("using value as attribute");
+        Student s2 = (Student) context.getBean("student1");
+        System.out.println(s2);
     }
 }

@@ -19,5 +19,13 @@
         </property>
     </bean>
 
+<!--    using value as attribute-->
+    <bean id="s1" class="com.springcore.Student">
+        <property name="id" value="1101" />
+        <property name="name" value="Siddhant" />
+        <property name="Address" value="Delhi, India" />
+    </bean>
+
+
 
 </beans>
