@@ -9,8 +9,12 @@
     <bean id="bref" class="com.springcore.ref.B">
         <property name="y" value="90"/>
     </bean>
-    <bean id="aref" class="com.springcore.ref.A">
-        <property name="x" value="70"/>
-        <property name="ob" ref="bref"/>
-    </bean>
+
+<!--    <bean id="aref" class="com.springcore.ref.A">-->
+<!--        <property name="x" value="70"/>-->
+<!--        <property name="ob" ref="bref"/>-->
+<!--    </bean>-->
+
+<!--    using p-schema in reference type injection -->
+    <bean id="aref" class="com.springcore.ref.A" p:x="70" p:ob-ref="bref"/>
 </beans>
