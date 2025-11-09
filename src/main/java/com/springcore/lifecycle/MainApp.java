@@ -15,5 +15,9 @@ public class MainApp {
         Pepsi p1 = (Pepsi)  con.getBean("pepsi1");
         System.out.println(p1);
 
+        System.out.println("------------------------");
+
+        Example e1 = (Example) con.getBean("example");
+        System.out.println(e1);
     }
 }
