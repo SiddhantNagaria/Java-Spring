@@ -1,4 +1,4 @@
-package com.springcore.autowire;
+package com.springcore.autowire.xml;
 
 public class Address {
     private String street;

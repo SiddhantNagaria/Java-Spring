@@ -6,21 +6,21 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- autowire by byName -->
-<!--    <bean class="com.springcore.autowire.Address" id="address">-->
+<!--    <bean class="com.springcore.autowire.xml.Address" id="address">-->
 <!--        <property name="street" value="Temp Street"/>-->
 <!--        <property name="city" value="Delhi"/>-->
 <!--    </bean>-->
 <!--    -->
-<!--    <bean class="com.springcore.autowire.Emp" id="emp1" autowire="byName"/>-->
+<!--    <bean class="com.springcore.autowire.xml.Emp" id="emp1" autowire="byName"/>-->
 
 <!--    autowire by ByType-->
 
-    <bean class="com.springcore.autowire.Address" id="address1">
+    <bean class="com.springcore.autowire.xml.Address" id="address1">
         <property name="street" value="Temp Street"/>
         <property name="city" value="Delhi"/>
     </bean>
 
-    <bean class="com.springcore.autowire.Emp" id="emp1" autowire="byType"/>
+    <bean class="com.springcore.autowire.xml.Emp" id="emp1" autowire="byType"/>
 
 
 </beans>
