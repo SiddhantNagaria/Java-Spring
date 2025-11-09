@@ -8,5 +8,8 @@ public class MainApp {
         ApplicationContext con = new ClassPathXmlApplicationContext("ci_config.xml");
         Person p1  = (Person) con.getBean("person");
         System.out.println(p1);
+
+        Addition ad1 =( Addition) con.getBean("add");
+        ad1.doSum();
     }
 }

@@ -20,4 +20,11 @@
     </bean>
 
 
+    <!--    addition bean -->
+    <!--to prevent ambiguity , use the TYPE attribute and INDEX attribute-->
+    <bean id="add" class="com.springcore.ci.Addition">
+        <constructor-arg value="12" type="int" index="1"/>
+        <constructor-arg value="24" type="int"/>
+    </bean>
+
 </beans>
