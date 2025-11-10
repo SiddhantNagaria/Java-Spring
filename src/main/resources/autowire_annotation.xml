@@ -11,10 +11,17 @@
     <context:annotation-config/>
 
 <!--  @Autowired - annotation config -: take any name -> ByType  -->
-    <bean class="com.springcore.autowire.annotation.Address" id="temp-address">
+<!--    <bean class="com.springcore.autowire.annotation.Address" id="temp-address">-->
+<!--        <property name="street" value="Temp Street"/>-->
+<!--        <property name="city" value="Delhi"/>-->
+<!--    </bean>-->
+
+<!--        Qualifier annotation bean -->
+    <bean class="com.springcore.autowire.annotation.Address" id="temp">
         <property name="street" value="Temp Street"/>
         <property name="city" value="Delhi"/>
     </bean>
+
 
     <bean class="com.springcore.autowire.annotation.Emp" id="emp1" autowire="byType"/>
 

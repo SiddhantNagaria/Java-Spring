@@ -9,6 +9,6 @@ public class MainApp {
         // autowire - byName
         Emp e = con.getBean("emp1", Emp.class);
 
-        System.out.println(e);
+         System.out.println(e);
     }
 }
