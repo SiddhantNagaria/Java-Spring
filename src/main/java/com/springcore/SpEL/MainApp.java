@@ -17,5 +17,8 @@ public class MainApp {
         SpelExpressionParser temp = new SpelExpressionParser();
         Expression ex = temp.parseExpression("22+44");
         System.out.println(ex.getValue());
+
+        Demo d = con.getBean("demo", Demo.class);
+        System.out.println(d);
     }
 }
